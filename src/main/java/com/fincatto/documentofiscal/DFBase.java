@@ -4,7 +4,7 @@ import java.io.StringWriter;
 
 import org.simpleframework.xml.core.Persister;
 
-import com.fincatto.documentofiscal.nfe310.persister.NFPersister;
+import com.fincatto.documentofiscal.nfe.persister.NFPersister;
 
 /**
  * Classe utilizada como base para objetos serializaveis.<br>

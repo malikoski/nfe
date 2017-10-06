@@ -3,7 +3,7 @@ package com.fincatto.documentofiscal.nfe310.classes;
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.fincatto.documentofiscal.nfe310.classes.NFNotaInfoItemModalidadeBCICMS;
+import com.fincatto.documentofiscal.nfe.classes.NFNotaInfoItemModalidadeBCICMS;
 
 public class NFNotaInfoItemModalidadeBCICMSTest {
 

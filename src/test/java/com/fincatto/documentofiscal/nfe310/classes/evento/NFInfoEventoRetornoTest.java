@@ -7,7 +7,7 @@ import org.junit.Test;
 
 import com.fincatto.documentofiscal.DFAmbiente;
 import com.fincatto.documentofiscal.DFUnidadeFederativa;
-import com.fincatto.documentofiscal.nfe310.classes.evento.NFInfoEventoRetorno;
+import com.fincatto.documentofiscal.nfe.classes.evento.NFInfoEventoRetorno;
 
 public class NFInfoEventoRetornoTest {
 

@@ -3,7 +3,7 @@ package com.fincatto.documentofiscal.nfe310.classes;
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.fincatto.documentofiscal.nfe310.classes.NFRegimeTributario;
+import com.fincatto.documentofiscal.nfe.classes.NFRegimeTributario;
 
 public class NFRegimeTributarioTest {
 

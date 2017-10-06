@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.fincatto.documentofiscal.nfe310.classes.nota.NFInformacaoImpostoDevolvido;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFInformacaoImpostoDevolvido;
 
 public class NFInformacaoImpostoDevolvidoTest {
 

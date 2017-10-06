@@ -4,7 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import com.fincatto.documentofiscal.DFAmbiente;
-import com.fincatto.documentofiscal.nfe310.utils.NFGeraCadeiaCertificados;
+import com.fincatto.documentofiscal.nfe.utils.NFGeraCadeiaCertificados;
 
 /**
  * Created by Diego Fincatto on 07/05/16.

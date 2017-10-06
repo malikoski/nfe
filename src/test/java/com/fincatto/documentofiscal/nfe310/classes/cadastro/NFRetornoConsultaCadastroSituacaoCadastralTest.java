@@ -1,5 +1,10 @@
 package com.fincatto.documentofiscal.nfe310.classes.cadastro;
 
+import com.fincatto.documentofiscal.nfe.classes.cadastro.NFRetornoConsultaCadastroEndereco;
+import com.fincatto.documentofiscal.nfe.classes.cadastro.NFIndicadorContribuinteNFe;
+import com.fincatto.documentofiscal.nfe.classes.cadastro.NFRetornoConsultaCadastroSituacaoCadastral;
+import com.fincatto.documentofiscal.nfe.classes.cadastro.NFSituacaoContribuinte;
+import com.fincatto.documentofiscal.nfe.classes.cadastro.NFIndicadorContribuinteCTe;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 

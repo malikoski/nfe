@@ -1,5 +1,23 @@
 package com.fincatto.documentofiscal.nfe310.classes.nota;
 
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoItemImpostoICMSSN201;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoItemImpostoICMS90;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoItemImpostoICMSSN202;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoItemImpostoICMS60;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoItemImpostoICMS;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoItemImpostoICMS20;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoItemImpostoICMS40;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoItemImpostoICMSSN500;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoItemImpostoICMS00;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoItemImpostoICMSSN101;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoItemImpostoICMS70;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoItemImpostoICMSSN900;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoItemImpostoICMS30;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoItemImpostoICMS10;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoItemImpostoICMSST;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoItemImpostoICMS51;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoItemImpostoICMSPartilhado;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoItemImpostoICMSSN102;
 import org.junit.Assert;
 import org.junit.Test;
 

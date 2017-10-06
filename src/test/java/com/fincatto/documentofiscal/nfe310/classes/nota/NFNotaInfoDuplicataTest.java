@@ -1,7 +1,7 @@
 package com.fincatto.documentofiscal.nfe310.classes.nota;
 
 import com.fincatto.documentofiscal.nfe310.FabricaDeObjetosFake;
-import com.fincatto.documentofiscal.nfe310.classes.nota.NFNotaInfoDuplicata;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoDuplicata;
 
 import org.joda.time.LocalDate;
 import org.junit.Assert;

@@ -9,8 +9,8 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import com.fincatto.documentofiscal.DFUnidadeFederativa;
-import com.fincatto.documentofiscal.nfe310.classes.cadastro.NFRetornoConsultaCadastroDados;
-import com.fincatto.documentofiscal.nfe310.classes.cadastro.NFRetornoConsultaCadastroSituacaoCadastral;
+import com.fincatto.documentofiscal.nfe.classes.cadastro.NFRetornoConsultaCadastroDados;
+import com.fincatto.documentofiscal.nfe.classes.cadastro.NFRetornoConsultaCadastroSituacaoCadastral;
 
 public class NFRetornoConsultaCadastroDadosTest {
 

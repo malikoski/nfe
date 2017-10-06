@@ -3,7 +3,7 @@ package com.fincatto.documentofiscal.nfe310.classes.lote.consulta;
 import com.fincatto.documentofiscal.DFAmbiente;
 import com.fincatto.documentofiscal.DFUnidadeFederativa;
 import com.fincatto.documentofiscal.nfe310.FabricaDeObjetosFake;
-import com.fincatto.documentofiscal.nfe310.classes.lote.consulta.NFLoteConsultaRetorno;
+import com.fincatto.documentofiscal.nfe.classes.lote.consulta.NFLoteConsultaRetorno;
 
 import org.joda.time.LocalDateTime;
 import org.junit.Assert;

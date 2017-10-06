@@ -3,9 +3,9 @@ package com.fincatto.documentofiscal.nfe310.classes.evento.cancelamento;
 import com.fincatto.documentofiscal.DFAmbiente;
 import com.fincatto.documentofiscal.DFUnidadeFederativa;
 import com.fincatto.documentofiscal.nfe310.FabricaDeObjetosFake;
-import com.fincatto.documentofiscal.nfe310.classes.evento.NFEventoRetorno;
-import com.fincatto.documentofiscal.nfe310.classes.evento.NFInfoEventoRetorno;
-import com.fincatto.documentofiscal.nfe310.classes.evento.cancelamento.NFProtocoloEventoCancelamento;
+import com.fincatto.documentofiscal.nfe.classes.evento.NFEventoRetorno;
+import com.fincatto.documentofiscal.nfe.classes.evento.NFInfoEventoRetorno;
+import com.fincatto.documentofiscal.nfe.classes.evento.cancelamento.NFProtocoloEventoCancelamento;
 
 import org.joda.time.LocalDateTime;
 import org.junit.Assert;

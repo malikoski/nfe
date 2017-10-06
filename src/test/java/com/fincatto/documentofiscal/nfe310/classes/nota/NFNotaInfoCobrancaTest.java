@@ -8,8 +8,8 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import com.fincatto.documentofiscal.nfe310.FabricaDeObjetosFake;
-import com.fincatto.documentofiscal.nfe310.classes.nota.NFNotaInfoCobranca;
-import com.fincatto.documentofiscal.nfe310.classes.nota.NFNotaInfoDuplicata;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoCobranca;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoDuplicata;
 
 public class NFNotaInfoCobrancaTest {
 

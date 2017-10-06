@@ -3,7 +3,7 @@ package com.fincatto.documentofiscal.nfe310.classes.nota;
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.fincatto.documentofiscal.nfe310.classes.nota.NFTipoIntegracaoPagamento;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFTipoIntegracaoPagamento;
 
 public class NFTipoIntegracaoPagamentoTest {
 

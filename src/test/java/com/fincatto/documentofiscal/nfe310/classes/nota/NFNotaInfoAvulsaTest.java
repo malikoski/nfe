@@ -8,7 +8,7 @@ import org.junit.Test;
 
 import com.fincatto.documentofiscal.DFUnidadeFederativa;
 import com.fincatto.documentofiscal.nfe310.FabricaDeObjetosFake;
-import com.fincatto.documentofiscal.nfe310.classes.nota.NFNotaInfoAvulsa;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoAvulsa;
 
 public class NFNotaInfoAvulsaTest {
 

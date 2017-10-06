@@ -6,7 +6,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import com.fincatto.documentofiscal.DFAmbiente;
-import com.fincatto.documentofiscal.nfe310.classes.lote.consulta.NFLoteConsulta;
+import com.fincatto.documentofiscal.nfe.classes.lote.consulta.NFLoteConsulta;
 
 public class NFLoteConsultaTest {
 

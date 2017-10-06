@@ -3,8 +3,8 @@ package com.fincatto.documentofiscal.nfe310.classes.cadastro;
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.fincatto.documentofiscal.nfe310.classes.cadastro.NFConsultaCadastro;
-import com.fincatto.documentofiscal.nfe310.classes.cadastro.NFInfoConsultaCadastro;
+import com.fincatto.documentofiscal.nfe.classes.cadastro.NFConsultaCadastro;
+import com.fincatto.documentofiscal.nfe.classes.cadastro.NFInfoConsultaCadastro;
 
 public class NFConsultaCadastroTest {
 

@@ -4,7 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import com.fincatto.documentofiscal.nfe310.FabricaDeObjetosFake;
-import com.fincatto.documentofiscal.nfe310.classes.nota.NFNotaInfoItemImpostoCOFINSNaoTributavel;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoItemImpostoCOFINSNaoTributavel;
 
 public class NFNotaInfoItemImpostoCOFINSNaoTributavelTest {
 

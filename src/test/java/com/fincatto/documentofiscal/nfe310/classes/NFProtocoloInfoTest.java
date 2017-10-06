@@ -9,7 +9,7 @@ import org.junit.Test;
 
 import com.fincatto.documentofiscal.DFAmbiente;
 import com.fincatto.documentofiscal.nfe310.FabricaDeObjetosFake;
-import com.fincatto.documentofiscal.nfe310.classes.NFProtocoloInfo;
+import com.fincatto.documentofiscal.nfe.classes.NFProtocoloInfo;
 
 public class NFProtocoloInfoTest {
 

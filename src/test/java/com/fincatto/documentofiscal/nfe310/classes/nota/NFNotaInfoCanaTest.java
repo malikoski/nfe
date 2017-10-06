@@ -8,9 +8,9 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import com.fincatto.documentofiscal.nfe310.FabricaDeObjetosFake;
-import com.fincatto.documentofiscal.nfe310.classes.nota.NFNotaInfoCana;
-import com.fincatto.documentofiscal.nfe310.classes.nota.NFNotaInfoCanaDeducao;
-import com.fincatto.documentofiscal.nfe310.classes.nota.NFNotaInfoCanaFornecimentoDiario;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoCana;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoCanaDeducao;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoCanaFornecimentoDiario;
 
 public class NFNotaInfoCanaTest {
 

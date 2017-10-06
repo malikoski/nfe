@@ -6,8 +6,8 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import com.fincatto.documentofiscal.nfe310.FabricaDeObjetosFake;
-import com.fincatto.documentofiscal.nfe310.classes.evento.cancelamento.NFEventoCancelamento;
-import com.fincatto.documentofiscal.nfe310.classes.nota.assinatura.NFSignature;
+import com.fincatto.documentofiscal.nfe.classes.evento.cancelamento.NFEventoCancelamento;
+import com.fincatto.documentofiscal.nfe.classes.nota.assinatura.NFSignature;
 
 public class NFEventoCancelamentoTest {
 

@@ -1,13 +1,20 @@
 package com.fincatto.documentofiscal.nfe310.classes.nota;
 
+import com.fincatto.documentofiscal.nfe.classes.NFNotaInfoItemProdutoVeiculoCondicaoChassi;
+import com.fincatto.documentofiscal.nfe.classes.NFNotaInfoTipoVeiculo;
+import com.fincatto.documentofiscal.nfe.classes.NFNotaInfoCombustivelTipo;
+import com.fincatto.documentofiscal.nfe.classes.NFNotaInfoEspecieVeiculo;
+import com.fincatto.documentofiscal.nfe.classes.NFNotaInfoVeiculoCor;
+import com.fincatto.documentofiscal.nfe.classes.NFNotaInfoItemProdutoVeiculoRestricao;
+import com.fincatto.documentofiscal.nfe.classes.NFNotaInfoItemProdutoVeiculoTipoOperacao;
+import com.fincatto.documentofiscal.nfe.classes.NFNotaInfoItemProdutoVeiculoCondicao;
 import java.math.BigDecimal;
 
 import org.junit.Assert;
 import org.junit.Test;
 
 import com.fincatto.documentofiscal.nfe310.FabricaDeObjetosFake;
-import com.fincatto.documentofiscal.nfe310.classes.*;
-import com.fincatto.documentofiscal.nfe310.classes.nota.NFNotaInfoItemProdutoVeiculo;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoItemProdutoVeiculo;
 
 public class NFNotaInfoItemProdutoVeiculoTest {
 

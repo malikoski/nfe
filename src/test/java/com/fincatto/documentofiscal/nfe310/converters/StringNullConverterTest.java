@@ -6,7 +6,7 @@ import org.simpleframework.xml.stream.InputNode;
 import org.simpleframework.xml.stream.NodeMap;
 import org.simpleframework.xml.stream.Position;
 
-import com.fincatto.documentofiscal.nfe310.converters.StringNullConverter;
+import com.fincatto.documentofiscal.nfe.converters.StringNullConverter;
 
 public class StringNullConverterTest {
 

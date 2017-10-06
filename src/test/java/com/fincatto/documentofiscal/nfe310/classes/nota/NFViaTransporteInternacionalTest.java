@@ -3,7 +3,7 @@ package com.fincatto.documentofiscal.nfe310.classes.nota;
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.fincatto.documentofiscal.nfe310.classes.nota.NFViaTransporteInternacional;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFViaTransporteInternacional;
 
 public class NFViaTransporteInternacionalTest {
 

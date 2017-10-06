@@ -12,11 +12,11 @@ import org.slf4j.LoggerFactory;
 
 import com.fincatto.documentofiscal.DFUnidadeFederativa;
 import com.fincatto.documentofiscal.DFModelo;
-import com.fincatto.documentofiscal.nfe310.NFeConfig;
-import com.fincatto.documentofiscal.nfe310.classes.NFAutorizador31;
-import com.fincatto.documentofiscal.nfe310.classes.nota.consulta.NFNotaConsulta;
-import com.fincatto.documentofiscal.nfe310.classes.nota.consulta.NFNotaConsultaRetorno;
-import com.fincatto.documentofiscal.nfe310.parsers.NotaFiscalChaveParser;
+import com.fincatto.documentofiscal.nfe.NFeConfig;
+import com.fincatto.documentofiscal.nfe.classes.NFAutorizador31;
+import com.fincatto.documentofiscal.nfe.classes.nota.consulta.NFNotaConsulta;
+import com.fincatto.documentofiscal.nfe.classes.nota.consulta.NFNotaConsultaRetorno;
+import com.fincatto.documentofiscal.nfe.parsers.NotaFiscalChaveParser;
 import com.fincatto.documentofiscal.nfe310.webservices.gerado.NfeConsulta2Stub;
 import com.fincatto.documentofiscal.nfe310.webservices.gerado.NfeConsulta2Stub.NfeConsultaNF2Result;
 import com.fincatto.documentofiscal.nfe310.webservices.nota.consulta.NfeConsultaStub;

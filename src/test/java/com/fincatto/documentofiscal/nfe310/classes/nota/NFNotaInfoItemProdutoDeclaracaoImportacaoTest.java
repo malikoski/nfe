@@ -2,9 +2,9 @@ package com.fincatto.documentofiscal.nfe310.classes.nota;
 
 import com.fincatto.documentofiscal.DFUnidadeFederativa;
 import com.fincatto.documentofiscal.nfe310.FabricaDeObjetosFake;
-import com.fincatto.documentofiscal.nfe310.classes.nota.NFFormaImportacaoIntermediacao;
-import com.fincatto.documentofiscal.nfe310.classes.nota.NFNotaInfoItemProdutoDeclaracaoImportacao;
-import com.fincatto.documentofiscal.nfe310.classes.nota.NFViaTransporteInternacional;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFFormaImportacaoIntermediacao;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoItemProdutoDeclaracaoImportacao;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFViaTransporteInternacional;
 
 import org.joda.time.LocalDate;
 import org.junit.Assert;

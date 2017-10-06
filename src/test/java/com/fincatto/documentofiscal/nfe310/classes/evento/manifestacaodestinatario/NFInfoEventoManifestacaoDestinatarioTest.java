@@ -9,8 +9,8 @@ import org.junit.Test;
 import com.fincatto.documentofiscal.DFAmbiente;
 import com.fincatto.documentofiscal.DFUnidadeFederativa;
 import com.fincatto.documentofiscal.nfe310.FabricaDeObjetosFake;
-import com.fincatto.documentofiscal.nfe310.classes.evento.manifestacaodestinatario.NFInfoEventoManifestacaoDestinatario;
-import com.fincatto.documentofiscal.nfe310.classes.evento.manifestacaodestinatario.NFInfoManifestacaoDestinatario;
+import com.fincatto.documentofiscal.nfe.classes.evento.manifestacaodestinatario.NFInfoEventoManifestacaoDestinatario;
+import com.fincatto.documentofiscal.nfe.classes.evento.manifestacaodestinatario.NFInfoManifestacaoDestinatario;
 
 public class NFInfoEventoManifestacaoDestinatarioTest {
 

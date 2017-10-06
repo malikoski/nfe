@@ -1,8 +1,8 @@
 package com.fincatto.documentofiscal.nfe310.classes.evento.cancelamento;
 
 import com.fincatto.documentofiscal.nfe310.FabricaDeObjetosFake;
-import com.fincatto.documentofiscal.nfe310.classes.evento.cancelamento.NFEnviaEventoCancelamento;
-import com.fincatto.documentofiscal.nfe310.classes.evento.cancelamento.NFEventoCancelamento;
+import com.fincatto.documentofiscal.nfe.classes.evento.cancelamento.NFEnviaEventoCancelamento;
+import com.fincatto.documentofiscal.nfe.classes.evento.cancelamento.NFEventoCancelamento;
 
 import org.junit.Assert;
 import org.junit.Test;

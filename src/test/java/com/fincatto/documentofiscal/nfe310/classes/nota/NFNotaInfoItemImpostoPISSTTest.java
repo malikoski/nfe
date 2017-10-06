@@ -6,7 +6,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import com.fincatto.documentofiscal.nfe310.FabricaDeObjetosFake;
-import com.fincatto.documentofiscal.nfe310.classes.nota.NFNotaInfoItemImpostoPISST;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoItemImpostoPISST;
 
 public class NFNotaInfoItemImpostoPISSTTest {
 

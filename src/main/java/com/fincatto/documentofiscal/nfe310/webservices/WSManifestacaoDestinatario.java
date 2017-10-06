@@ -1,5 +1,10 @@
 package com.fincatto.documentofiscal.nfe310.webservices;
 
+import com.fincatto.documentofiscal.nfe.classes.evento.manifestacaodestinatario.NFTipoEventoManifestacaoDestinatario;
+import com.fincatto.documentofiscal.nfe.classes.evento.manifestacaodestinatario.NFEventoManifestacaoDestinatario;
+import com.fincatto.documentofiscal.nfe.classes.evento.manifestacaodestinatario.NFInfoManifestacaoDestinatario;
+import com.fincatto.documentofiscal.nfe.classes.evento.manifestacaodestinatario.NFEnviaEventoManifestacaoDestinatario;
+import com.fincatto.documentofiscal.nfe.classes.evento.manifestacaodestinatario.NFInfoEventoManifestacaoDestinatario;
 import java.math.BigDecimal;
 import java.util.Collections;
 
@@ -10,13 +15,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.fincatto.documentofiscal.DFUnidadeFederativa;
-import com.fincatto.documentofiscal.nfe310.NFeConfig;
-import com.fincatto.documentofiscal.nfe310.assinatura.AssinaturaDigital;
-import com.fincatto.documentofiscal.nfe310.classes.NFAutorizador31;
-import com.fincatto.documentofiscal.nfe310.classes.evento.NFEnviaEventoRetorno;
-import com.fincatto.documentofiscal.nfe310.classes.evento.manifestacaodestinatario.*;
-import com.fincatto.documentofiscal.nfe310.parsers.NotaFiscalChaveParser;
-import com.fincatto.documentofiscal.nfe310.persister.NFPersister;
+import com.fincatto.documentofiscal.nfe.NFeConfig;
+import com.fincatto.documentofiscal.nfe.assinatura.AssinaturaDigital;
+import com.fincatto.documentofiscal.nfe.classes.NFAutorizador31;
+import com.fincatto.documentofiscal.nfe.classes.evento.NFEnviaEventoRetorno;
+import com.fincatto.documentofiscal.nfe.parsers.NotaFiscalChaveParser;
+import com.fincatto.documentofiscal.nfe.persister.NFPersister;
 import com.fincatto.documentofiscal.nfe310.webservices.gerado.RecepcaoEventoStub;
 
 public class WSManifestacaoDestinatario {

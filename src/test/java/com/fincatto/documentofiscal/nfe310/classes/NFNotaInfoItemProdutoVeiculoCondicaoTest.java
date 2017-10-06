@@ -3,7 +3,7 @@ package com.fincatto.documentofiscal.nfe310.classes;
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.fincatto.documentofiscal.nfe310.classes.NFNotaInfoItemProdutoVeiculoCondicao;
+import com.fincatto.documentofiscal.nfe.classes.NFNotaInfoItemProdutoVeiculoCondicao;
 
 public class NFNotaInfoItemProdutoVeiculoCondicaoTest {
 

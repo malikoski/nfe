@@ -6,7 +6,7 @@ import org.joda.time.LocalDate;
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.fincatto.documentofiscal.nfe310.classes.nota.NFNotaInfoItemProdutoMedicamento;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoItemProdutoMedicamento;
 
 public class NFNotaInfoItemProdutoMedicamentoTest {
 

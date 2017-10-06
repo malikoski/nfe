@@ -1,5 +1,21 @@
 package com.fincatto.documentofiscal.nfe310.classes.nota;
 
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoPagamento;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoCompra;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfo;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoIdentificacao;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoItem;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoAvulsa;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoTransporte;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoCana;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoLocal;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoInformacoesAdicionais;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoDestinatario;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoCobranca;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoTotal;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoEmitente;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoExportacao;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFPessoaAutorizadaDownloadNFe;
 import java.math.BigDecimal;
 import java.util.Collections;
 import java.util.List;

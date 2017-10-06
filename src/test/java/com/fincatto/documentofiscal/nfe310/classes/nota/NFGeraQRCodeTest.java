@@ -2,10 +2,10 @@ package com.fincatto.documentofiscal.nfe310.classes.nota;
 
 import com.fincatto.documentofiscal.DFUnidadeFederativa;
 import com.fincatto.documentofiscal.nfe310.FabricaDeObjetosFake;
-import com.fincatto.documentofiscal.nfe310.NFeConfig;
-import com.fincatto.documentofiscal.nfe310.classes.nota.NFNota;
-import com.fincatto.documentofiscal.nfe310.classes.nota.NFNotaInfoSuplementar;
-import com.fincatto.documentofiscal.nfe310.utils.NFGeraQRCode;
+import com.fincatto.documentofiscal.nfe.NFeConfig;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNota;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoSuplementar;
+import com.fincatto.documentofiscal.nfe.utils.NFGeraQRCode;
 
 import org.junit.Assert;
 import org.junit.Test;

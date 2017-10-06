@@ -1,8 +1,8 @@
 package com.fincatto.documentofiscal.nfe310.classes.nota;
 
 import com.fincatto.documentofiscal.nfe310.FabricaDeObjetosFake;
-import com.fincatto.documentofiscal.nfe310.classes.nota.NFNotaInfoISSQNTotal;
-import com.fincatto.documentofiscal.nfe310.classes.nota.NFNotaInfoRegimeEspecialTributacao;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoISSQNTotal;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoRegimeEspecialTributacao;
 
 import org.joda.time.LocalDate;
 import org.junit.Assert;

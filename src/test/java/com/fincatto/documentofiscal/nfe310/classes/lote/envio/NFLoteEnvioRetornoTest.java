@@ -7,7 +7,7 @@ import org.junit.Test;
 import com.fincatto.documentofiscal.DFAmbiente;
 import com.fincatto.documentofiscal.DFUnidadeFederativa;
 import com.fincatto.documentofiscal.nfe310.FabricaDeObjetosFake;
-import com.fincatto.documentofiscal.nfe310.classes.lote.envio.NFLoteEnvioRetorno;
+import com.fincatto.documentofiscal.nfe.classes.lote.envio.NFLoteEnvioRetorno;
 
 public class NFLoteEnvioRetornoTest {
 

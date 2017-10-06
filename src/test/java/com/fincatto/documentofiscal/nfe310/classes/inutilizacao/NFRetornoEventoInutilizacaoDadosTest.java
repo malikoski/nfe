@@ -7,7 +7,7 @@ import org.junit.Test;
 
 import com.fincatto.documentofiscal.DFAmbiente;
 import com.fincatto.documentofiscal.DFUnidadeFederativa;
-import com.fincatto.documentofiscal.nfe310.classes.evento.inutilizacao.NFRetornoEventoInutilizacaoDados;
+import com.fincatto.documentofiscal.nfe.classes.evento.inutilizacao.NFRetornoEventoInutilizacaoDados;
 
 public class NFRetornoEventoInutilizacaoDadosTest {
 

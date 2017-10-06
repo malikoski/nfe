@@ -5,8 +5,8 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import com.fincatto.documentofiscal.DFUnidadeFederativa;
-import com.fincatto.documentofiscal.nfe310.classes.NFTipoEmissao;
-import com.fincatto.documentofiscal.nfe310.parsers.NotaFiscalChaveParser;
+import com.fincatto.documentofiscal.nfe.classes.NFTipoEmissao;
+import com.fincatto.documentofiscal.nfe.parsers.NotaFiscalChaveParser;
 
 import java.text.ParseException;
 

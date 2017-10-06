@@ -3,8 +3,8 @@ package com.fincatto.documentofiscal.nfe310.classes.nota;
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.fincatto.documentofiscal.nfe310.classes.NFNotaInfoSituacaoTributariaIPI;
-import com.fincatto.documentofiscal.nfe310.classes.nota.NFNotaInfoItemImpostoIPINT;
+import com.fincatto.documentofiscal.nfe.classes.NFNotaInfoSituacaoTributariaIPI;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoItemImpostoIPINT;
 
 public class NFNotaInfoItemImpostoIPINTTest {
 

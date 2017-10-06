@@ -3,7 +3,7 @@ package com.fincatto.documentofiscal.nfe310.validadores;
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.fincatto.documentofiscal.nfe310.validadores.StringValidador;
+import com.fincatto.documentofiscal.nfe.validadores.StringValidador;
 
 public class StringValidadorTest {
 

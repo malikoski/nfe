@@ -9,8 +9,8 @@ import org.simpleframework.xml.Root;
 import com.fincatto.documentofiscal.DFAmbiente;
 import com.fincatto.documentofiscal.DFBase;
 import com.fincatto.documentofiscal.DFUnidadeFederativa;
-import com.fincatto.documentofiscal.nfe310.classes.NFProtocoloInfo;
-import com.fincatto.documentofiscal.nfe310.classes.lote.envio.NFLoteEnvioRetornoRecebimentoInfo;
+import com.fincatto.documentofiscal.nfe.classes.NFProtocoloInfo;
+import com.fincatto.documentofiscal.nfe.classes.lote.envio.NFLoteEnvioRetornoRecebimentoInfo;
 
 /**
  * @Author Eldevan Nery Junior on 26/05/17.

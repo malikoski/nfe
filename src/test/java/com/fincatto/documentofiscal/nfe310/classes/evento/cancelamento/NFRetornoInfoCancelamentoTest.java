@@ -6,8 +6,8 @@ import org.junit.Test;
 
 import com.fincatto.documentofiscal.DFAmbiente;
 import com.fincatto.documentofiscal.DFUnidadeFederativa;
-import com.fincatto.documentofiscal.nfe310.classes.evento.cancelamento.NFRetornoInfoCancelamento;
-import com.fincatto.documentofiscal.nfe310.classes.nota.assinatura.NFSignature;
+import com.fincatto.documentofiscal.nfe.classes.evento.cancelamento.NFRetornoInfoCancelamento;
+import com.fincatto.documentofiscal.nfe.classes.nota.assinatura.NFSignature;
 
 public class NFRetornoInfoCancelamentoTest {
 

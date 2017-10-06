@@ -2,7 +2,7 @@ package com.fincatto.documentofiscal.nfe310.validadores;
 
 import org.junit.Test;
 
-import com.fincatto.documentofiscal.nfe310.validadores.IntegerValidador;
+import com.fincatto.documentofiscal.nfe.validadores.IntegerValidador;
 
 public class IntegerValidadorTest {
 

@@ -4,7 +4,7 @@ import java.math.BigInteger;
 
 import org.junit.Test;
 
-import com.fincatto.documentofiscal.nfe310.validadores.BigIntegerValidador;
+import com.fincatto.documentofiscal.nfe.validadores.BigIntegerValidador;
 
 public class BigIntegerValidadorTest {
 

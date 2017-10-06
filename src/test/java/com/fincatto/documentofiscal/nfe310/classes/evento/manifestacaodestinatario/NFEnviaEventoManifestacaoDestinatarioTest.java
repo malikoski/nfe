@@ -1,8 +1,8 @@
 package com.fincatto.documentofiscal.nfe310.classes.evento.manifestacaodestinatario;
 
 import com.fincatto.documentofiscal.nfe310.FabricaDeObjetosFake;
-import com.fincatto.documentofiscal.nfe310.classes.evento.manifestacaodestinatario.NFEnviaEventoManifestacaoDestinatario;
-import com.fincatto.documentofiscal.nfe310.classes.evento.manifestacaodestinatario.NFEventoManifestacaoDestinatario;
+import com.fincatto.documentofiscal.nfe.classes.evento.manifestacaodestinatario.NFEnviaEventoManifestacaoDestinatario;
+import com.fincatto.documentofiscal.nfe.classes.evento.manifestacaodestinatario.NFEventoManifestacaoDestinatario;
 
 import org.junit.Assert;
 import org.junit.Test;

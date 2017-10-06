@@ -6,8 +6,8 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import com.fincatto.documentofiscal.nfe310.FabricaDeObjetosFake;
-import com.fincatto.documentofiscal.nfe310.classes.NFNotaInfoSituacaoTributariaCOFINS;
-import com.fincatto.documentofiscal.nfe310.classes.nota.NFNotaInfoItemImpostoCOFINSOutrasOperacoes;
+import com.fincatto.documentofiscal.nfe.classes.NFNotaInfoSituacaoTributariaCOFINS;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoItemImpostoCOFINSOutrasOperacoes;
 
 public class NFNotaInfoItemImpostoCOFINSOutrasOperacoesTest {
 

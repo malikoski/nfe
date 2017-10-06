@@ -5,7 +5,7 @@ import org.junit.Test;
 
 import com.fincatto.documentofiscal.DFUnidadeFederativa;
 import com.fincatto.documentofiscal.nfe310.FabricaDeObjetosFake;
-import com.fincatto.documentofiscal.nfe310.classes.nota.NFNotaInfoLocal;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoLocal;
 
 public class NFNotaInfoLocalTest {
 

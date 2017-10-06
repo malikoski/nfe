@@ -9,8 +9,8 @@ import org.junit.Test;
 import com.fincatto.documentofiscal.DFAmbiente;
 import com.fincatto.documentofiscal.DFUnidadeFederativa;
 import com.fincatto.documentofiscal.nfe310.FabricaDeObjetosFake;
-import com.fincatto.documentofiscal.nfe310.classes.evento.cancelamento.NFInfoCancelamento;
-import com.fincatto.documentofiscal.nfe310.classes.evento.cancelamento.NFInfoEventoCancelamento;
+import com.fincatto.documentofiscal.nfe.classes.evento.cancelamento.NFInfoCancelamento;
+import com.fincatto.documentofiscal.nfe.classes.evento.cancelamento.NFInfoEventoCancelamento;
 
 public class NFInfoEventoCancelamentoTest {
 

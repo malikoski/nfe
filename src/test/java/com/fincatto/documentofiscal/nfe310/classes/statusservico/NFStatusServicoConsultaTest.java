@@ -5,7 +5,7 @@ import org.junit.Test;
 
 import com.fincatto.documentofiscal.DFAmbiente;
 import com.fincatto.documentofiscal.DFUnidadeFederativa;
-import com.fincatto.documentofiscal.nfe310.classes.statusservico.consulta.NFStatusServicoConsulta;
+import com.fincatto.documentofiscal.nfe.classes.statusservico.consulta.NFStatusServicoConsulta;
 
 public class NFStatusServicoConsultaTest {
 

@@ -1,5 +1,16 @@
 package com.fincatto.documentofiscal.nfe310.classes.nota;
 
+import com.fincatto.documentofiscal.nfe.classes.nota.NFIndicadorPresencaComprador;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFOperacaoConsumidorFinal;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoIdentificacao;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFIdentificadorLocalDestinoOperacao;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFInfoReferenciada;
+import com.fincatto.documentofiscal.nfe.classes.NFFinalidade;
+import com.fincatto.documentofiscal.nfe.classes.NFFormaPagamentoPrazo;
+import com.fincatto.documentofiscal.nfe.classes.NFTipoEmissao;
+import com.fincatto.documentofiscal.nfe.classes.NFTipoImpressao;
+import com.fincatto.documentofiscal.nfe.classes.NFProcessoEmissor;
+import com.fincatto.documentofiscal.nfe.classes.NFTipo;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -12,7 +23,6 @@ import com.fincatto.documentofiscal.DFAmbiente;
 import com.fincatto.documentofiscal.DFModelo;
 import com.fincatto.documentofiscal.DFUnidadeFederativa;
 import com.fincatto.documentofiscal.nfe310.FabricaDeObjetosFake;
-import com.fincatto.documentofiscal.nfe310.classes.*;
 
 public class NFNotaInfoIdentificacaoTest {
 

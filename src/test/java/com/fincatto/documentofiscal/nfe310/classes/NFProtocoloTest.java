@@ -4,8 +4,8 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import com.fincatto.documentofiscal.nfe310.FabricaDeObjetosFake;
-import com.fincatto.documentofiscal.nfe310.classes.NFProtocolo;
-import com.fincatto.documentofiscal.nfe310.classes.NFProtocoloInfo;
+import com.fincatto.documentofiscal.nfe.classes.NFProtocolo;
+import com.fincatto.documentofiscal.nfe.classes.NFProtocoloInfo;
 
 public class NFProtocoloTest {
 

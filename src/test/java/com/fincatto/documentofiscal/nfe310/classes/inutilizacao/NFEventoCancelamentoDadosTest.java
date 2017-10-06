@@ -6,7 +6,7 @@ import org.junit.Test;
 import com.fincatto.documentofiscal.DFAmbiente;
 import com.fincatto.documentofiscal.DFUnidadeFederativa;
 import com.fincatto.documentofiscal.nfe310.FabricaDeObjetosFake;
-import com.fincatto.documentofiscal.nfe310.classes.evento.inutilizacao.NFEventoInutilizacaoDados;
+import com.fincatto.documentofiscal.nfe.classes.evento.inutilizacao.NFEventoInutilizacaoDados;
 
 public class NFEventoCancelamentoDadosTest {
 

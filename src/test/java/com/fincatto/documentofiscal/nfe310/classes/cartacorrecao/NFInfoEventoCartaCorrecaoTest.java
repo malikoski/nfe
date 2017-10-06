@@ -3,7 +3,7 @@ package com.fincatto.documentofiscal.nfe310.classes.cartacorrecao;
 import com.fincatto.documentofiscal.DFAmbiente;
 import com.fincatto.documentofiscal.DFUnidadeFederativa;
 import com.fincatto.documentofiscal.nfe310.FabricaDeObjetosFake;
-import com.fincatto.documentofiscal.nfe310.classes.evento.NFInfoEvento;
+import com.fincatto.documentofiscal.nfe.classes.evento.NFInfoEvento;
 
 import org.joda.time.DateTime;
 import org.junit.Assert;

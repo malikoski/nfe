@@ -1,7 +1,7 @@
 package com.fincatto.documentofiscal.nfe310.classes.cartacorrecao;
 
 import com.fincatto.documentofiscal.nfe310.FabricaDeObjetosFake;
-import com.fincatto.documentofiscal.nfe310.classes.evento.cartacorrecao.NFEnviaEventoCartaCorrecao;
+import com.fincatto.documentofiscal.nfe.classes.evento.cartacorrecao.NFEnviaEventoCartaCorrecao;
 
 import org.junit.Assert;
 import org.junit.Test;

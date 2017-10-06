@@ -4,7 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import com.fincatto.documentofiscal.nfe310.FabricaDeObjetosFake;
-import com.fincatto.documentofiscal.nfe310.classes.evento.cancelamento.NFInfoCancelamento;
+import com.fincatto.documentofiscal.nfe.classes.evento.cancelamento.NFInfoCancelamento;
 
 public class NFInfoCancelamentoTest {
 

@@ -1,5 +1,15 @@
 package com.fincatto.documentofiscal.nfe310.classes.nota;
 
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoItemImpostoPIS;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoItemImpostoCOFINS;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoItemImpostoIPI;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoItemImpostoPISST;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoItemImpostoICMS;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoItemImposto;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoItemImpostoICMSUFDestino;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoItemImpostoCOFINSST;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoItemImpostoISSQN;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoItemImpostoImportacao;
 import java.math.BigDecimal;
 
 import org.junit.Assert;

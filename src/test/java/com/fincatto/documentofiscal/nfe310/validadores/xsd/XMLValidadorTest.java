@@ -2,8 +2,8 @@ package com.fincatto.documentofiscal.nfe310.validadores.xsd;
 
 import com.fincatto.documentofiscal.nfe310.FabricaDeObjetosFake;
 import com.fincatto.documentofiscal.nfe310.NFeConfigFake;
-import com.fincatto.documentofiscal.nfe310.assinatura.AssinaturaDigital;
-import com.fincatto.documentofiscal.nfe310.validadores.xsd.XMLValidador;
+import com.fincatto.documentofiscal.nfe.assinatura.AssinaturaDigital;
+import com.fincatto.documentofiscal.nfe.validadores.xsd.XMLValidador;
 
 import org.junit.Assert;
 import org.junit.Test;

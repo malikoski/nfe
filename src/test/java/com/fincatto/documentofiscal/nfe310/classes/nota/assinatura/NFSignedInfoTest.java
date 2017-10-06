@@ -3,10 +3,10 @@ package com.fincatto.documentofiscal.nfe310.classes.nota.assinatura;
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.fincatto.documentofiscal.nfe310.classes.nota.assinatura.NFCanonicalizationMethod;
-import com.fincatto.documentofiscal.nfe310.classes.nota.assinatura.NFReference;
-import com.fincatto.documentofiscal.nfe310.classes.nota.assinatura.NFSignatureMethod;
-import com.fincatto.documentofiscal.nfe310.classes.nota.assinatura.NFSignedInfo;
+import com.fincatto.documentofiscal.nfe.classes.nota.assinatura.NFCanonicalizationMethod;
+import com.fincatto.documentofiscal.nfe.classes.nota.assinatura.NFReference;
+import com.fincatto.documentofiscal.nfe.classes.nota.assinatura.NFSignatureMethod;
+import com.fincatto.documentofiscal.nfe.classes.nota.assinatura.NFSignedInfo;
 
 public class NFSignedInfoTest {
 

@@ -3,7 +3,7 @@ package com.fincatto.documentofiscal.nfe310.validadores;
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.fincatto.documentofiscal.nfe310.validadores.BigDecimalParser;
+import com.fincatto.documentofiscal.nfe.validadores.BigDecimalParser;
 
 import java.math.BigDecimal;
 

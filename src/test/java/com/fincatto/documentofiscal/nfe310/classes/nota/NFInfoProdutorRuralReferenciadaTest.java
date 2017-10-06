@@ -4,7 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import com.fincatto.documentofiscal.DFUnidadeFederativa;
-import com.fincatto.documentofiscal.nfe310.classes.nota.NFInfoProdutorRuralReferenciada;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFInfoProdutorRuralReferenciada;
 
 public class NFInfoProdutorRuralReferenciadaTest {
 

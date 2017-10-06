@@ -4,8 +4,8 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import com.fincatto.documentofiscal.nfe310.FabricaDeObjetosFake;
-import com.fincatto.documentofiscal.nfe310.classes.nota.NFIndicadorIEDestinatario;
-import com.fincatto.documentofiscal.nfe310.classes.nota.NFNotaInfoDestinatario;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFIndicadorIEDestinatario;
+import com.fincatto.documentofiscal.nfe.classes.nota.NFNotaInfoDestinatario;
 
 public class NFNotaInfoDestinatarioTest {
 

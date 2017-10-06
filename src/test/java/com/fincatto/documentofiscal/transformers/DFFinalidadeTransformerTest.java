@@ -3,8 +3,8 @@ package com.fincatto.documentofiscal.transformers;
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.fincatto.documentofiscal.nfe310.classes.NFFinalidade;
-import com.fincatto.documentofiscal.nfe310.transformers.NFFinalidadeTransformer;
+import com.fincatto.documentofiscal.nfe.classes.NFFinalidade;
+import com.fincatto.documentofiscal.nfe.transformers.NFFinalidadeTransformer;
 
 public class DFFinalidadeTransformerTest {
     @Test
