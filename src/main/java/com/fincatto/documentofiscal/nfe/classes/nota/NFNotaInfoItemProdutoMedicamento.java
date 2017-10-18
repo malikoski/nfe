@@ -1,26 +1,27 @@
 package com.fincatto.documentofiscal.nfe.classes.nota;
 
-import java.math.BigDecimal;
-
-import org.joda.time.LocalDate;
-import org.simpleframework.xml.Element;
-
 import com.fincatto.documentofiscal.DFBase;
 import com.fincatto.documentofiscal.nfe.validadores.BigDecimalParser;
 import com.fincatto.documentofiscal.nfe.validadores.StringValidador;
+import java.math.BigDecimal;
+import org.joda.time.LocalDate;
+import org.simpleframework.xml.Element;
 
 public class NFNotaInfoItemProdutoMedicamento extends DFBase {
 
-    @Element(name = "nLote", required = true)
+    @Element(name = "cProdANVISA", required = false)//Trocar required true na 4.00
+    private String codigoAnvisa;
+    
+    @Element(name = "nLote", required = false)//3.10 - retirar para 4.00
     private String lote;
 
-    @Element(name = "qLote", required = true)
+    @Element(name = "qLote", required = false)//3.10 - retirar para 4.00
     private String quantidade;
 
-    @Element(name = "dFab", required = true)
+    @Element(name = "dFab", required = false)//3.10 - retirar para 4.00
     private LocalDate dataFabricacao;
 
-    @Element(name = "dVal", required = true)
+    @Element(name = "dVal", required = false)//3.10 - retirar para 4.00
     private LocalDate dataValidade;
 
     @Element(name = "vPMC", required = true)
@@ -32,6 +33,11 @@ public class NFNotaInfoItemProdutoMedicamento extends DFBase {
         this.dataFabricacao = null;
         this.dataValidade = null;
         this.precoMaximoConsumidor = null;
+    }
+
+    public void setCodigoAnvisa(String codigoAnvisa) {
+        StringValidador.tamanho13(lote, lote);
+        this.codigoAnvisa = codigoAnvisa;
     }
 
     public void setLote(final String lote) {
@@ -55,6 +61,10 @@ public class NFNotaInfoItemProdutoMedicamento extends DFBase {
         this.precoMaximoConsumidor = BigDecimalParser.tamanho15Com2CasasDecimais(precoMaximoConsumidor, "Preco Maximo Consumidor Medicamento");
     }
 
+    public String getCodigoAnvisa() {
+        return codigoAnvisa;
+    }
+
     public String getLote() {
         return this.lote;
     }
@@ -74,4 +84,5 @@ public class NFNotaInfoItemProdutoMedicamento extends DFBase {
     public String getPrecoMaximoConsumidor() {
         return this.precoMaximoConsumidor;
     }
+
 }

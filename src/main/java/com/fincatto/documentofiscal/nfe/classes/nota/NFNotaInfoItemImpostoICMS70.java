@@ -1,18 +1,17 @@
 package com.fincatto.documentofiscal.nfe.classes.nota;
 
-import com.fincatto.documentofiscal.nfe.classes.NFNotaInfoItemModalidadeBCICMS;
+import com.fincatto.documentofiscal.DFBase;
 import com.fincatto.documentofiscal.nfe.classes.NFNotaInfoImpostoTributacaoICMS;
+import com.fincatto.documentofiscal.nfe.classes.NFNotaInfoItemModalidadeBCICMS;
+import com.fincatto.documentofiscal.nfe.classes.NFNotaInfoItemModalidadeBCICMSST;
 import com.fincatto.documentofiscal.nfe.classes.NFNotaMotivoDesoneracaoICMS;
 import com.fincatto.documentofiscal.nfe.classes.NFOrigem;
-import com.fincatto.documentofiscal.nfe.classes.NFNotaInfoItemModalidadeBCICMSST;
+import com.fincatto.documentofiscal.nfe.validadores.BigDecimalParser;
 import java.math.BigDecimal;
-
 import org.simpleframework.xml.Element;
 
-import com.fincatto.documentofiscal.DFBase;
-import com.fincatto.documentofiscal.nfe.validadores.BigDecimalParser;
-
 public class NFNotaInfoItemImpostoICMS70 extends DFBase {
+
     @Element(name = "orig", required = true)
     private NFOrigem origem;
 
@@ -58,6 +57,15 @@ public class NFNotaInfoItemImpostoICMS70 extends DFBase {
     @Element(name = "motDesICMS", required = false)
     private NFNotaMotivoDesoneracaoICMS desoneracao;
 
+    @Element(name = "vBCFCPST", required = false)
+    private String baseCalculoFcpSt;
+
+    @Element(name = "pFCPST", required = false)
+    private String percentualFcpSt;
+
+    @Element(name = "vFCPST", required = false)
+    private String valorFcpSt;
+
     public void setOrigem(final NFOrigem origem) {
         this.origem = origem;
     }
@@ -71,7 +79,8 @@ public class NFNotaInfoItemImpostoICMS70 extends DFBase {
     }
 
     public void setPercentualReducaoBC(final BigDecimal percentualReducaoBC) {
-        this.percentualReducaoBC = BigDecimalParser.tamanho7ComAte4CasasDecimais(percentualReducaoBC, "Percentual Reducao BC ICMS70 Item");
+        this.percentualReducaoBC = BigDecimalParser.tamanho7ComAte4CasasDecimais(percentualReducaoBC,
+                "Percentual Reducao BC ICMS70 Item");
     }
 
     public void setValorBC(final BigDecimal valorBC) {
@@ -91,11 +100,13 @@ public class NFNotaInfoItemImpostoICMS70 extends DFBase {
     }
 
     public void setPercentualMargemValorAdicionadoICMSST(final BigDecimal percentualMargemValorAdicionadoICMSST) {
-        this.percentualMargemValorAdicionadoICMSST = BigDecimalParser.tamanho7ComAte4CasasDecimais(percentualMargemValorAdicionadoICMSST, "Percentual Margem Valor Adicionado ICMS ST ICMS70 Item");
+        this.percentualMargemValorAdicionadoICMSST = BigDecimalParser.tamanho7ComAte4CasasDecimais(
+                percentualMargemValorAdicionadoICMSST, "Percentual Margem Valor Adicionado ICMS ST ICMS70 Item");
     }
 
     public void setPercentualReducaoBCICMSST(final BigDecimal percentualReducaoBCICMSST) {
-        this.percentualReducaoBCICMSST = BigDecimalParser.tamanho7ComAte4CasasDecimais(percentualReducaoBCICMSST, "Percentual Reducao BC ICMS ST ICMS70 Item");
+        this.percentualReducaoBCICMSST = BigDecimalParser.tamanho7ComAte4CasasDecimais(percentualReducaoBCICMSST,
+                "Percentual Reducao BC ICMS ST ICMS70 Item");
     }
 
     public void setValorBCST(final BigDecimal valorBCST) {
@@ -103,7 +114,8 @@ public class NFNotaInfoItemImpostoICMS70 extends DFBase {
     }
 
     public void setPercentualAliquotaImpostoICMSST(final BigDecimal aliquotaImpostoICMSST) {
-        this.percentualAliquotaImpostoICMSST = BigDecimalParser.tamanho7ComAte4CasasDecimais(aliquotaImpostoICMSST, "Aliquota Imposto ICMS ST ICMS70 Item");
+        this.percentualAliquotaImpostoICMSST = BigDecimalParser.tamanho7ComAte4CasasDecimais(aliquotaImpostoICMSST,
+                "Aliquota Imposto ICMS ST ICMS70 Item");
     }
 
     public void setValorICMSST(final BigDecimal valorICMSST) {
@@ -115,7 +127,23 @@ public class NFNotaInfoItemImpostoICMS70 extends DFBase {
     }
 
     public void setValorICMSDesoneracao(final BigDecimal valorICMSDesoneracao) {
-        this.valorICMSDesoneracao = BigDecimalParser.tamanho15Com2CasasDecimais(valorICMSDesoneracao, "Valor ICMS Desoneracao ICMS70 Item");
+        this.valorICMSDesoneracao = BigDecimalParser.tamanho15Com2CasasDecimais(valorICMSDesoneracao,
+                "Valor ICMS Desoneracao ICMS70 Item");
+    }
+
+    public void setBaseCalculoFcpSt(BigDecimal baseCalculoFcpSt) {
+        this.baseCalculoFcpSt = BigDecimalParser.tamanho15Com2CasasDecimais(baseCalculoFcpSt,
+                "Valor da Base de Cálculo do FCP");
+    }
+
+    public void setPercentualFcpSt(BigDecimal percentualFcpSt) {
+        this.percentualFcpSt = BigDecimalParser.tamanho7ComAte4CasasDecimais(percentualFcpSt,
+                "Percentual do FCP retido por Substituição Tributária");
+    }
+
+    public void setValorFcpSt(BigDecimal valorFcpSt) {
+        this.valorFcpSt = BigDecimalParser.tamanho15Com2CasasDecimais(valorFcpSt,
+                "Valor do FCP retido por Substituição Tributária");
     }
 
     public NFOrigem getOrigem() {
@@ -177,4 +205,17 @@ public class NFNotaInfoItemImpostoICMS70 extends DFBase {
     public NFNotaMotivoDesoneracaoICMS getDesoneracao() {
         return this.desoneracao;
     }
+
+    public String getBaseCalculoFcpSt() {
+        return baseCalculoFcpSt;
+    }
+
+    public String getPercentualFcpSt() {
+        return percentualFcpSt;
+    }
+
+    public String getValorFcpSt() {
+        return valorFcpSt;
+    }
+
 }

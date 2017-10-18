@@ -1,16 +1,15 @@
 package com.fincatto.documentofiscal.nfe.classes.nota;
 
-import java.math.BigDecimal;
-
-import org.simpleframework.xml.Element;
-
 import com.fincatto.documentofiscal.DFBase;
 import com.fincatto.documentofiscal.nfe.classes.NFNotaInfoImpostoTributacaoICMS;
 import com.fincatto.documentofiscal.nfe.classes.NFNotaInfoItemModalidadeBCICMS;
 import com.fincatto.documentofiscal.nfe.classes.NFOrigem;
 import com.fincatto.documentofiscal.nfe.validadores.BigDecimalParser;
+import java.math.BigDecimal;
+import org.simpleframework.xml.Element;
 
 public class NFNotaInfoItemImpostoICMS51 extends DFBase {
+
     @Element(name = "orig", required = true)
     private NFOrigem origem;
 
@@ -41,6 +40,15 @@ public class NFNotaInfoItemImpostoICMS51 extends DFBase {
     @Element(name = "vICMS", required = false)
     private String valorICMS;
 
+    @Element(name = "vBCFCP", required = false)
+    private String baseCalculoFcp;
+
+    @Element(name = "pFCP", required = false)
+    private String percentualFcp;
+
+    @Element(name = "vFCP", required = false)
+    private String valorFcp;
+
     public void setOrigem(final NFOrigem origem) {
         this.origem = origem;
     }
@@ -54,7 +62,8 @@ public class NFNotaInfoItemImpostoICMS51 extends DFBase {
     }
 
     public void setPercentualReducaoBC(final BigDecimal percentualReducaoBC) {
-        this.percentualReducaoBC = BigDecimalParser.tamanho7ComAte4CasasDecimais(percentualReducaoBC, "Percentual Reducao BC ICMS51 Item");
+        this.percentualReducaoBC = BigDecimalParser.tamanho7ComAte4CasasDecimais(percentualReducaoBC,
+                "Percentual Reducao BC ICMS51 Item");
     }
 
     public void setValorBCICMS(final BigDecimal valorBCICMS) {
@@ -62,7 +71,8 @@ public class NFNotaInfoItemImpostoICMS51 extends DFBase {
     }
 
     public void setPercentualICMS(final BigDecimal percentualICMS) {
-        this.percentualICMS = BigDecimalParser.tamanho7ComAte4CasasDecimais(percentualICMS, "Percentual ICMS ICMS51 Item");
+        this.percentualICMS = BigDecimalParser.tamanho7ComAte4CasasDecimais(percentualICMS,
+                "Percentual ICMS ICMS51 Item");
     }
 
     public void setValorICMS(final BigDecimal valorICMS) {
@@ -70,15 +80,33 @@ public class NFNotaInfoItemImpostoICMS51 extends DFBase {
     }
 
     public void setPercentualDiferimento(final BigDecimal percentualDiferimento) {
-        this.percentualDiferimento = BigDecimalParser.tamanho7ComAte4CasasDecimais(percentualDiferimento, "Percentual Diferimento ICMS51 Item");
+        this.percentualDiferimento = BigDecimalParser.tamanho7ComAte4CasasDecimais(percentualDiferimento,
+                "Percentual Diferimento ICMS51 Item");
     }
 
     public void setValorICMSDiferimento(final BigDecimal valorICMSDiferimento) {
-        this.valorICMSDiferimento = BigDecimalParser.tamanho15Com2CasasDecimais(valorICMSDiferimento, "Valor ICMS Diferimento ICMS51 Item");
+        this.valorICMSDiferimento = BigDecimalParser.tamanho15Com2CasasDecimais(valorICMSDiferimento,
+                "Valor ICMS Diferimento ICMS51 Item");
     }
 
     public void setValorICMSOperacao(final BigDecimal valorICMSOperacao) {
-        this.valorICMSOperacao = BigDecimalParser.tamanho15Com2CasasDecimais(valorICMSOperacao, "Valor ICMS Operacao ICMS51 Item");
+        this.valorICMSOperacao = BigDecimalParser.tamanho15Com2CasasDecimais(valorICMSOperacao,
+                "Valor ICMS Operacao ICMS51 Item");
+    }
+
+    public void setBaseCalculoFcp(BigDecimal baseCalculoFcp) {
+        this.baseCalculoFcp = BigDecimalParser.tamanho15Com2CasasDecimais(baseCalculoFcp,
+                "Valor da Base de Cálculo do FCP");
+    }
+
+    public void setPercentualFcp(final BigDecimal percentualFcp) {
+        this.percentualFcp = BigDecimalParser.tamanho7ComAte4CasasDecimais(percentualFcp,
+                "Percentual do ICMS relativo ao Fundo de Combate à Pobreza (FCP)");
+    }
+
+    public void setValorFcp(BigDecimal valorFcp) {
+        this.valorFcp = BigDecimalParser.tamanho15Com2CasasDecimais(valorFcp,
+                "Valor do ICMS relativo ao Fundo de Combate à Pobreza (FCP)");
     }
 
     public NFOrigem getOrigem() {
@@ -120,4 +148,17 @@ public class NFNotaInfoItemImpostoICMS51 extends DFBase {
     public String getValorICMS() {
         return this.valorICMS;
     }
+
+    public String getBaseCalculoFcp() {
+        return baseCalculoFcp;
+    }
+
+    public String getPercentualFcp() {
+        return percentualFcp;
+    }
+
+    public String getValorFcp() {
+        return valorFcp;
+    }
+
 }

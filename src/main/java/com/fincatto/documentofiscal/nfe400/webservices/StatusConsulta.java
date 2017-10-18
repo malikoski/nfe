@@ -81,6 +81,9 @@ public class StatusConsulta {
         }
 
         NFeStatusServico4Soap12 port = new NFeStatusServico4(new URL(target)).getNFeStatusServico4Soap12();
+        
+        String xmlConsulta = ElementStringConverter.write((Element) dadosMsg.getContent().get(0));
+        StatusConsulta.LOGGER.debug(xmlConsulta);
 
         NfeResultMsg result = port.nfeStatusServicoNF(dadosMsg);
         

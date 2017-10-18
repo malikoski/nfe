@@ -1,24 +1,22 @@
 package com.fincatto.documentofiscal.nfe.classes.nota;
 
-import com.fincatto.documentofiscal.nfe.classes.NFFormaPagamentoPrazo;
-import com.fincatto.documentofiscal.nfe.classes.NFTipoEmissao;
-import com.fincatto.documentofiscal.nfe.classes.NFTipo;
-import com.fincatto.documentofiscal.nfe.classes.NFFinalidade;
-import com.fincatto.documentofiscal.nfe.classes.NFProcessoEmissor;
-import com.fincatto.documentofiscal.nfe.classes.NFTipoImpressao;
-import java.util.List;
-
-import org.joda.time.DateTime;
-import org.simpleframework.xml.Element;
-import org.simpleframework.xml.ElementList;
-
 import com.fincatto.documentofiscal.DFAmbiente;
 import com.fincatto.documentofiscal.DFBase;
-import com.fincatto.documentofiscal.DFUnidadeFederativa;
 import com.fincatto.documentofiscal.DFModelo;
+import com.fincatto.documentofiscal.DFUnidadeFederativa;
+import com.fincatto.documentofiscal.nfe.classes.NFFinalidade;
+import com.fincatto.documentofiscal.nfe.classes.NFFormaPagamentoPrazo;
+import com.fincatto.documentofiscal.nfe.classes.NFProcessoEmissor;
+import com.fincatto.documentofiscal.nfe.classes.NFTipo;
+import com.fincatto.documentofiscal.nfe.classes.NFTipoEmissao;
+import com.fincatto.documentofiscal.nfe.classes.NFTipoImpressao;
 import com.fincatto.documentofiscal.nfe.validadores.IntegerValidador;
 import com.fincatto.documentofiscal.nfe.validadores.ListValidador;
 import com.fincatto.documentofiscal.nfe.validadores.StringValidador;
+import java.util.List;
+import org.joda.time.DateTime;
+import org.simpleframework.xml.Element;
+import org.simpleframework.xml.ElementList;
 
 public class NFNotaInfoIdentificacao extends DFBase {
 	
@@ -31,7 +29,7 @@ public class NFNotaInfoIdentificacao extends DFBase {
     @Element(name = "natOp", required = true)
     private String naturezaOperacao;
 
-    @Element(name = "indPag", required = true)
+    @Element(name = "indPag", required = false)
     private NFFormaPagamentoPrazo formaPagamento;
 
     @Element(name = "mod", required = true)

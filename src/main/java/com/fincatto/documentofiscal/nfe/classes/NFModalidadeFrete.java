@@ -4,6 +4,8 @@ public enum NFModalidadeFrete {
     POR_CONTA_DO_EMITENTE("0", "Por conta do emitente"),
     POR_CONTA_DO_DESTINATARIO_REMETENTE("1", "Por conta do destinat\u00e1rio remetente"),
     POR_CONTA_DE_TERCEIROS("2", "Por conta de terceiros"),
+    PROPRIO_POR_CONTA_DO_REMETENTE("3", "Transporte Pr\u00f3prio por conta do Remetente"),
+    PROPRIO_POR_CONTA_DO_DESTINATARIO("4", "Transporte Pr\u00f3prio por conta do Destinat\u00e1rio"),
     SEM_FRETE("9", "Sem frete");
 
     private final String codigo;

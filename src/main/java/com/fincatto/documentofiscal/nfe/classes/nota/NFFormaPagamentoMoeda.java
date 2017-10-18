@@ -11,6 +11,7 @@ public enum NFFormaPagamentoMoeda {
     VALE_REFEICAO("11", "Vale refei\u00e7\u00e3o"),
     VALE_PRESENTE("12", "Vale presente"),
     VALE_COMBUSTIVEL("13", "Vale combust\u00edvel"),
+    DUPLICATA_MERCANTIL("14", "Duplicata Mercantil"),
     OUTRO("99", "Outro");
 
     private final String codigo;

@@ -1,16 +1,18 @@
 package com.fincatto.documentofiscal.nfe.classes.nota;
 
-import java.math.BigDecimal;
-
-import org.simpleframework.xml.Element;
-
 import com.fincatto.documentofiscal.DFBase;
 import com.fincatto.documentofiscal.nfe.validadores.BigDecimalParser;
+import java.math.BigDecimal;
+import org.simpleframework.xml.Element;
 
 public class NFNotaInfoItemImpostoICMSUFDestino extends DFBase {
+
     @Element(name = "vBCUFDest", required = true)
     private String valorBaseCalculoDestino;
 
+    @Element(name = "vBCFCPUFDest", required = false)
+    private String valorBaseCalculoFcpUfDestino;
+    
     @Element(name = "pFCPUFDest", required = true)
     private String percentualRelativoFundoCombatePobrezaDestino;
 
@@ -37,15 +39,27 @@ public class NFNotaInfoItemImpostoICMSUFDestino extends DFBase {
     }
 
     public void setValorBaseCalculoDestino(final BigDecimal valorBaseCalculoDestino) {
-        this.valorBaseCalculoDestino = BigDecimalParser.tamanho15Com2CasasDecimais(valorBaseCalculoDestino, "Valor BC Destino");
+        this.valorBaseCalculoDestino = BigDecimalParser.tamanho15Com2CasasDecimais(valorBaseCalculoDestino,
+                "Valor BC Destino");
+    }
+
+    public String getValorBaseCalculoFcpUfDestino() {
+        return valorBaseCalculoFcpUfDestino;
+    }
+
+    public void setValorBaseCalculoFcpUfDestino(BigDecimal valorBaseCalculoFcpUfDestino) {
+        this.valorBaseCalculoFcpUfDestino = BigDecimalParser.tamanho15Com2CasasDecimais(valorBaseCalculoFcpUfDestino,
+                "Valor da BC FCP na UF de destino");
     }
 
     public String getPercentualRelativoFundoCombatePobrezaDestino() {
         return this.percentualRelativoFundoCombatePobrezaDestino;
     }
 
-    public void setPercentualRelativoFundoCombatePobrezaDestino(final BigDecimal percentualRelativoFundoCombatePobrezaDestino) {
-        this.percentualRelativoFundoCombatePobrezaDestino = BigDecimalParser.tamanho7ComAte4CasasDecimais(percentualRelativoFundoCombatePobrezaDestino, "Percentual Relativo Fundo Combate Pobreza Destino");
+    public void setPercentualRelativoFundoCombatePobrezaDestino(
+            final BigDecimal percentualRelativoFundoCombatePobrezaDestino) {
+        this.percentualRelativoFundoCombatePobrezaDestino = BigDecimalParser.tamanho7ComAte4CasasDecimais(
+                percentualRelativoFundoCombatePobrezaDestino, "Percentual Relativo Fundo Combate Pobreza Destino");
     }
 
     public String getPercentualAliquotaInternaDestino() {
@@ -53,7 +67,8 @@ public class NFNotaInfoItemImpostoICMSUFDestino extends DFBase {
     }
 
     public void setPercentualAliquotaInternaDestino(final BigDecimal percentualAliquotaInternaDestino) {
-        this.percentualAliquotaInternaDestino = BigDecimalParser.tamanho7ComAte4CasasDecimais(percentualAliquotaInternaDestino, "Percentual Aliquota Interna Destino");
+        this.percentualAliquotaInternaDestino = BigDecimalParser.tamanho7ComAte4CasasDecimais(
+                percentualAliquotaInternaDestino, "Percentual Aliquota Interna Destino");
     }
 
     public String getPercentualInterestadual() {
@@ -61,7 +76,8 @@ public class NFNotaInfoItemImpostoICMSUFDestino extends DFBase {
     }
 
     public void setPercentualInterestadual(final BigDecimal percentualInterestadual) {
-        this.percentualInterestadual = BigDecimalParser.tamanho7ComAte4CasasDecimais(percentualInterestadual, "Percentual Interestadual ICMS UF Destino");
+        this.percentualInterestadual = BigDecimalParser.tamanho7ComAte4CasasDecimais(percentualInterestadual,
+                "Percentual Interestadual ICMS UF Destino");
     }
 
     public String getPercentualProvisorioPartilha() {
@@ -69,7 +85,8 @@ public class NFNotaInfoItemImpostoICMSUFDestino extends DFBase {
     }
 
     public void setPercentualProvisorioPartilha(final BigDecimal percentualProvisorioPartilha) {
-        this.percentualProvisorioPartilha = BigDecimalParser.tamanho7ComAte4CasasDecimais(percentualProvisorioPartilha, "Percentual Provisorio Partilha ICMS UF Destino");
+        this.percentualProvisorioPartilha = BigDecimalParser.tamanho7ComAte4CasasDecimais(percentualProvisorioPartilha,
+                "Percentual Provisorio Partilha ICMS UF Destino");
     }
 
     public String getValorRelativoFundoCombatePobrezaDestino() {
@@ -77,7 +94,8 @@ public class NFNotaInfoItemImpostoICMSUFDestino extends DFBase {
     }
 
     public void setValorRelativoFundoCombatePobrezaDestino(final BigDecimal valorRelativoFundoCombatePobrezaDestino) {
-        this.valorRelativoFundoCombatePobrezaDestino = BigDecimalParser.tamanho15Com2CasasDecimais(valorRelativoFundoCombatePobrezaDestino, "Valor Relativo Fundo Combate Pobreza Destino");
+        this.valorRelativoFundoCombatePobrezaDestino = BigDecimalParser.tamanho15Com2CasasDecimais(
+                valorRelativoFundoCombatePobrezaDestino, "Valor Relativo Fundo Combate Pobreza Destino");
     }
 
     public String getValorICMSInterestadualDestino() {
@@ -85,7 +103,8 @@ public class NFNotaInfoItemImpostoICMSUFDestino extends DFBase {
     }
 
     public void setValorICMSInterestadualDestino(final BigDecimal valorICMSInterestadualDestino) {
-        this.valorICMSInterestadualDestino = BigDecimalParser.tamanho15Com2CasasDecimais(valorICMSInterestadualDestino, "Valor ICMS Interestadual ICMS UF Destino");
+        this.valorICMSInterestadualDestino = BigDecimalParser.tamanho15Com2CasasDecimais(valorICMSInterestadualDestino,
+                "Valor ICMS Interestadual ICMS UF Destino");
     }
 
     public String getValorICMSInterestadualRemetente() {
@@ -93,6 +112,7 @@ public class NFNotaInfoItemImpostoICMSUFDestino extends DFBase {
     }
 
     public void setValorICMSInterestadualRemetente(final BigDecimal valorICMSInterestadualRemetente) {
-        this.valorICMSInterestadualRemetente = BigDecimalParser.tamanho15Com2CasasDecimais(valorICMSInterestadualRemetente, "Valor ICMS Interestadual Remetente ICMS UF Destino");
+        this.valorICMSInterestadualRemetente = BigDecimalParser.tamanho15Com2CasasDecimais(
+                valorICMSInterestadualRemetente, "Valor ICMS Interestadual Remetente ICMS UF Destino");
     }
 }

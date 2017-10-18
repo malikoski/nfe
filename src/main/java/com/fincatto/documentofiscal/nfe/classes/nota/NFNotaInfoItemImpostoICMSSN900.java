@@ -1,17 +1,16 @@
 package com.fincatto.documentofiscal.nfe.classes.nota;
 
-import com.fincatto.documentofiscal.nfe.classes.NFNotaSituacaoOperacionalSimplesNacional;
+import com.fincatto.documentofiscal.DFBase;
 import com.fincatto.documentofiscal.nfe.classes.NFNotaInfoItemModalidadeBCICMS;
-import com.fincatto.documentofiscal.nfe.classes.NFOrigem;
 import com.fincatto.documentofiscal.nfe.classes.NFNotaInfoItemModalidadeBCICMSST;
+import com.fincatto.documentofiscal.nfe.classes.NFNotaSituacaoOperacionalSimplesNacional;
+import com.fincatto.documentofiscal.nfe.classes.NFOrigem;
+import com.fincatto.documentofiscal.nfe.validadores.BigDecimalParser;
 import java.math.BigDecimal;
-
 import org.simpleframework.xml.Element;
 
-import com.fincatto.documentofiscal.DFBase;
-import com.fincatto.documentofiscal.nfe.validadores.BigDecimalParser;
-
 public class NFNotaInfoItemImpostoICMSSN900 extends DFBase {
+
     @Element(name = "orig", required = true)
     private NFOrigem origem;
 
@@ -57,6 +56,15 @@ public class NFNotaInfoItemImpostoICMSSN900 extends DFBase {
     @Element(name = "vCredICMSSN", required = false)
     private String valorCreditoICMSSN;
 
+    @Element(name = "vBCFCPST", required = false)
+    private String baseCalculoFcpSt;
+
+    @Element(name = "pFCPST", required = false)
+    private String percentualFcpSt;
+
+    @Element(name = "vFCPST", required = false)
+    private String valorFcpSt;
+
     public void setOrigem(final NFOrigem origem) {
         this.origem = origem;
     }
@@ -74,11 +82,13 @@ public class NFNotaInfoItemImpostoICMSSN900 extends DFBase {
     }
 
     public void setPercentualReducaoBC(final BigDecimal percentualReducaoBC) {
-        this.percentualReducaoBC = BigDecimalParser.tamanho7ComAte4CasasDecimais(percentualReducaoBC, "Percentual Reducao BC ICMSSN900");
+        this.percentualReducaoBC = BigDecimalParser.tamanho7ComAte4CasasDecimais(percentualReducaoBC,
+                "Percentual Reducao BC ICMSSN900");
     }
 
     public void setPercentualAliquotaImposto(final BigDecimal aliquotaImposto) {
-        this.percentualAliquotaImposto = BigDecimalParser.tamanho7ComAte4CasasDecimais(aliquotaImposto, "Aliquota Imposto ICMSSN900");
+        this.percentualAliquotaImposto = BigDecimalParser.tamanho7ComAte4CasasDecimais(aliquotaImposto,
+                "Aliquota Imposto ICMSSN900");
     }
 
     public void setValorICMS(final BigDecimal valorICMS) {
@@ -90,11 +100,13 @@ public class NFNotaInfoItemImpostoICMSSN900 extends DFBase {
     }
 
     public void setPercentualMargemValorAdicionadoICMSST(final BigDecimal percentualMargemValorAdicionadoICMSST) {
-        this.percentualMargemValorAdicionadoICMSST = BigDecimalParser.tamanho7ComAte4CasasDecimais(percentualMargemValorAdicionadoICMSST, "Percentual Margel Valor Adicionado ICMS ST ICMSSN900");
+        this.percentualMargemValorAdicionadoICMSST = BigDecimalParser.tamanho7ComAte4CasasDecimais(
+                percentualMargemValorAdicionadoICMSST, "Percentual Margel Valor Adicionado ICMS ST ICMSSN900");
     }
 
     public void setPercentualReducaoBCICMSST(final BigDecimal percentualReducaoBCICMSST) {
-        this.percentualReducaoBCICMSST = BigDecimalParser.tamanho7ComAte4CasasDecimais(percentualReducaoBCICMSST, "Percentual Reducao BC ICMS ST ICMSSN900");
+        this.percentualReducaoBCICMSST = BigDecimalParser.tamanho7ComAte4CasasDecimais(percentualReducaoBCICMSST,
+                "Percentual Reducao BC ICMS ST ICMSSN900");
     }
 
     public void setValorBCICMSST(final BigDecimal valorBCICMSST) {
@@ -102,23 +114,42 @@ public class NFNotaInfoItemImpostoICMSSN900 extends DFBase {
     }
 
     public void setPercentualAliquotaImpostoICMSST(final BigDecimal aliquotaImpostoICMSST) {
-        this.percentualAliquotaImpostoICMSST = BigDecimalParser.tamanho7ComAte4CasasDecimais(aliquotaImpostoICMSST, "Aliquota Imposto ICMS ST ICMSSN900");
+        this.percentualAliquotaImpostoICMSST = BigDecimalParser.tamanho7ComAte4CasasDecimais(aliquotaImpostoICMSST,
+                "Aliquota Imposto ICMS ST ICMSSN900");
     }
 
     public void setValorICMSST(final BigDecimal valorICMSST) {
         this.valorICMSST = BigDecimalParser.tamanho15Com2CasasDecimais(valorICMSST, "Valor ICMS ST ICMSSN900");
     }
 
-    public void setPercentualAliquotaAplicavelCalculoCreditoSN(final BigDecimal percentualAliquotaAplicavelCalculoCreditoSN) {
-        this.percentualAliquotaAplicavelCalculoCreditoSN = BigDecimalParser.tamanho7ComAte4CasasDecimais(percentualAliquotaAplicavelCalculoCreditoSN, "Aliquota Aplicavel Calculo Credito SN ICMSSN900");
+    public void setPercentualAliquotaAplicavelCalculoCreditoSN(
+            final BigDecimal percentualAliquotaAplicavelCalculoCreditoSN) {
+        this.percentualAliquotaAplicavelCalculoCreditoSN = BigDecimalParser.tamanho7ComAte4CasasDecimais(
+                percentualAliquotaAplicavelCalculoCreditoSN, "Aliquota Aplicavel Calculo Credito SN ICMSSN900");
     }
 
     public void setValorCreditoICMSSN(final BigDecimal valorCreditoICMSSN) {
-        this.valorCreditoICMSSN = BigDecimalParser.tamanho15Com2CasasDecimais(valorCreditoICMSSN, "Valor Credito ICMSSN900");
+        this.valorCreditoICMSSN = BigDecimalParser.tamanho15Com2CasasDecimais(valorCreditoICMSSN,
+                "Valor Credito ICMSSN900");
     }
 
     public NFOrigem getOrigem() {
         return this.origem;
+    }
+
+    public void setBaseCalculoFcpSt(BigDecimal baseCalculoFcpSt) {
+        this.baseCalculoFcpSt = BigDecimalParser.tamanho15Com2CasasDecimais(baseCalculoFcpSt,
+                "Valor da Base de Cálculo do FCP");
+    }
+
+    public void setPercentualFcpSt(BigDecimal percentualFcpSt) {
+        this.percentualFcpSt = BigDecimalParser.tamanho7ComAte4CasasDecimais(percentualFcpSt,
+                "Percentual do FCP retido por Substituição Tributária");
+    }
+
+    public void setValorFcpSt(BigDecimal valorFcpSt) {
+        this.valorFcpSt = BigDecimalParser.tamanho15Com2CasasDecimais(valorFcpSt,
+                "Valor do FCP retido por Substituição Tributária");
     }
 
     public NFNotaSituacaoOperacionalSimplesNacional getSituacaoOperacaoSN() {
@@ -176,4 +207,17 @@ public class NFNotaInfoItemImpostoICMSSN900 extends DFBase {
     public String getValorCreditoICMSSN() {
         return this.valorCreditoICMSSN;
     }
+
+    public String getBaseCalculoFcpSt() {
+        return baseCalculoFcpSt;
+    }
+
+    public String getPercentualFcpSt() {
+        return percentualFcpSt;
+    }
+
+    public String getValorFcpSt() {
+        return valorFcpSt;
+    }
+
 }

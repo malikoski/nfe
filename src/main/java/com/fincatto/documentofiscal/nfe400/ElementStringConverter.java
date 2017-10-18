@@ -53,9 +53,18 @@ public class ElementStringConverter {
     public static Element read(final String xml) {
         try {
             DocumentBuilder documentBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
+            
             InputSource inputSource = new InputSource();
             inputSource.setCharacterStream(new StringReader(xml));
-            return documentBuilder.parse(inputSource).getDocumentElement();
+            
+            Document doc = documentBuilder.parse(inputSource);
+            doc.setXmlStandalone(true);
+            
+            Element teste = doc.getDocumentElement();
+           
+            String xmlConsulta = ElementStringConverter.write(teste);
+
+            return teste;
         } catch (SAXException | IOException | ParserConfigurationException ex) {
             Logger.getLogger(ElementStringConverter.class.getName()).log(Level.SEVERE, null, ex);
             throw new RuntimeException("Erro ao converter objeto String para Element", ex);

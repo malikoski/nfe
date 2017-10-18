@@ -23,7 +23,9 @@ public final class XMLValidador {
         final URL xsdPath = XMLValidador.class.getClassLoader().getResource(String.format(pathFilesValidation, xsd));
         final SchemaFactory schemaFactory = SchemaFactory.newInstance("http://www.w3.org/2001/XMLSchema");
         final Schema schema = schemaFactory.newSchema(new StreamSource(xsdPath.toURI().toString()));
+        
         schema.newValidator().validate(new StreamSource(new StringReader(xml)));
+        
         return true;
     }
 

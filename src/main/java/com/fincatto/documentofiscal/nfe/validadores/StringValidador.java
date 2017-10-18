@@ -4,7 +4,6 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
 import org.apache.commons.lang3.StringUtils;
 
 public abstract class StringValidador {
@@ -248,6 +247,12 @@ public abstract class StringValidador {
         }
     }
 
+    public static void tamanho2a95(final String string, final String info) {
+        if (string != null) {
+            StringValidador.intervalo(string, 2, 95, info);
+        }
+    }
+
     public static void tamanho8a9(final String string, final String info) {
         if (string != null) {
             StringValidador.intervalo(string, 8, 9, info);
@@ -288,6 +293,12 @@ public abstract class StringValidador {
         if (string != null) {
             StringValidador.apenasNumerico(string, info);
             StringValidador.intervalo(string, 8, 9, info);
+        }
+    }
+
+    public static void tamanho13(final String string, final String info) {
+        if (string != null) {
+            StringValidador.validaTamanhoMaximo(string, 13, info);
         }
     }
 
@@ -380,7 +391,9 @@ public abstract class StringValidador {
 
     public static void fci(final String numeroControleFCI) {
         if (numeroControleFCI != null) {
-            final Matcher matcher = Pattern.compile("^([A-F0-9]{8}-[A-F0-9]{4}-[A-F0-9]{4}-[A-F0-9]{4}-[A-F0-9]{12})$").matcher(numeroControleFCI);
+            final Matcher matcher
+                    = Pattern.compile("^([A-F0-9]{8}-[A-F0-9]{4}-[A-F0-9]{4}-[A-F0-9]{4}-[A-F0-9]{12})$").matcher(
+                    numeroControleFCI);
             if (!matcher.find()) {
                 throw new IllegalStateException(String.format("FCI fora do padrao (%s)", numeroControleFCI));
             }
@@ -404,7 +417,8 @@ public abstract class StringValidador {
 
     private static void validaTamanhoMaximo(final String string, final int tamanho, final String info) {
         if (string.length() < 1 || string.length() > tamanho) {
-            throw new IllegalStateException(String.format("%s \"%s\" deve possuir entre 1-%s caracteres", info, string, tamanho));
+            throw new IllegalStateException(String.format("%s \"%s\" deve possuir entre 1-%s caracteres", info, string,
+                    tamanho));
         }
     }
 
@@ -416,7 +430,8 @@ public abstract class StringValidador {
 
     private static void intervalo(final String string, final int inicio, final int fim, final String info) {
         if (string.length() < inicio || string.length() > fim) {
-            throw new IllegalStateException(String.format("%s \"%s\" deve possuir entre %s-%s caracteres", info, string, inicio, fim));
+            throw new IllegalStateException(String.format("%s \"%s\" deve possuir entre %s-%s caracteres", info, string,
+                    inicio, fim));
         }
     }
 
@@ -430,7 +445,8 @@ public abstract class StringValidador {
     public static void itemListaServico(final String itemListaServicos) {
         final Matcher matcher = Pattern.compile("^\\d{2}\\.\\d{2}$").matcher(itemListaServicos);
         if (!matcher.find()) {
-            throw new IllegalStateException(String.format("Item Lista de servico fora do padrao (%s)", itemListaServicos));
+            throw new IllegalStateException(
+                    String.format("Item Lista de servico fora do padrao (%s)", itemListaServicos));
         }
     }
 

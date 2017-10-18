@@ -1,10 +1,5 @@
 package com.fincatto.documentofiscal.nfe.classes.nota;
 
-import org.apache.commons.lang3.StringUtils;
-import org.simpleframework.xml.Element;
-import org.simpleframework.xml.ElementList;
-import org.simpleframework.xml.convert.Convert;
-
 import com.fincatto.documentofiscal.DFBase;
 import com.fincatto.documentofiscal.nfe.classes.NFProdutoCompoeValorNota;
 import com.fincatto.documentofiscal.nfe.converters.StringNullConverter;
@@ -12,9 +7,12 @@ import com.fincatto.documentofiscal.nfe.validadores.BigDecimalParser;
 import com.fincatto.documentofiscal.nfe.validadores.IntegerValidador;
 import com.fincatto.documentofiscal.nfe.validadores.ListValidador;
 import com.fincatto.documentofiscal.nfe.validadores.StringValidador;
-
 import java.math.BigDecimal;
 import java.util.List;
+import org.apache.commons.lang3.StringUtils;
+import org.simpleframework.xml.Element;
+import org.simpleframework.xml.ElementList;
+import org.simpleframework.xml.convert.Convert;
 
 public class NFNotaInfoItemProduto extends DFBase {
 
@@ -97,6 +95,9 @@ public class NFNotaInfoItemProduto extends DFBase {
 
     @Element(name = "nFCI", required = false)
     private String numeroControleFCI;
+    
+    @Element(name = "rastro", required = false)
+    private List<NFNotaInfoItemProdutoRastreavel> rastreaveis;
 
     @Element(name = "veicProd", required = false)
     private NFNotaInfoItemProdutoVeiculo veiculo;
@@ -217,6 +218,11 @@ public class NFNotaInfoItemProduto extends DFBase {
         this.numeroControleFCI = numeroControleFCI;
     }
 
+    public void setRastreaveis(List<NFNotaInfoItemProdutoRastreavel> rastreaveis) {
+        ListValidador.tamanho500(rastreaveis, "Produtos Rastreáveis");
+        this.rastreaveis = rastreaveis;
+    }
+    
     public void setVeiculo(final NFNotaInfoItemProdutoVeiculo veiculo) {
         if (this.medicamentos != null || this.armamentos != null || this.combustivel != null || this.numeroRECOPI != null) {
             throw new IllegalStateException("veiculos, medicamentos, armamentos e combustivel sao mutuamente exclusivos");
@@ -374,6 +380,10 @@ public class NFNotaInfoItemProduto extends DFBase {
 
     public String getNumeroControleFCI() {
         return this.numeroControleFCI;
+    }
+
+    public List<NFNotaInfoItemProdutoRastreavel> getRastreaveis() {
+        return rastreaveis;
     }
 
     public NFNotaInfoItemProdutoVeiculo getVeiculo() {
